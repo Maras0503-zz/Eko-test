@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>OZE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="../css/demo.css" />
+        <script type="text/javascript" src="../js/jquery1.11.1.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/menu_slice/style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/menu_slice/custom.css" />
+        <link rel="stylesheet" type="text/css" href="../css/main_menu/stimenu.css" />
+        <link rel="stylesheet" href="../css/sidebar/slidebars.css">
+        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+        <noscript>
+	<link rel="stylesheet" type="text/css" href="../css/styleNoJS.css" />
+	</noscript>
+        <script src="../js/jquery-1.6.1.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var st_jq = jQuery.noConflict(true);
+        </script>
+        <script src="../js/jquery.easing.1.3.js" type="text/javascript"></script>
+        <script src="../js/jquery.iconmenu.js" type="text/javascript"></script>
+        <script src="../js/jquery.parallax-1.1.3.js" type="text/javascript"></script>
+
+        <link rel="stylesheet" type="text/css" href="../css/main_menu/style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/main_menu/stimenu.css" />
+        
+        
+    </head>
+    <body>
+        
+        <!-- przesuwanie do góry strony //-->
+            <script>
+             st_jq(function(){
+                var stt_is_shown = false;
+                st_jq(window).scroll(function(){
+                   var win_height = 300;
+                   var scroll_top = $(document).scrollTop(); 
+                   if (scroll_top > win_height && !stt_is_shown) {
+                      stt_is_shown = true;
+                      st_jq("#scroll-to-top").fadeIn();
+                   } else if (scroll_top < win_height && stt_is_shown) {
+                      stt_is_shown = false;
+                      st_jq("#scroll-to-top").fadeOut();
+                   }
+               });
+                            st_jq("#scroll-to-top").click(function(e){
+                   e.preventDefault();
+                   st_jq('html, body').animate({scrollTop:0}, 1500);
+                 });
+              });
+              </script>
+
+    <!-- płynne przewijanie  //-->
+        <script>
+            function scroll_to(selector) {
+                $('html,body').animate({scrollTop: $(selector).offset().top}, 700);
+            return false;
+               };
+               
+        </script>
+        
+    <!-- Sidebar //-->    
+        <div class="sb-slidebar sb-left">
+              
+                <ul class="sb-menu">
+                    <!-- wyszukiwarka do wersji 2.0 <li class="sb-close"><a href="strony/szukaj.html">Szukaj</a></li> -->
+                    <p style="text-align: center">Szukaj:</p>
+                    <div class="search">
+                        
+                        <form action="http://www.google.pl/search" method="get">
+                        <input type="text" name="q" />
+                        <input type="hidden" name="ie" value="UTF-8" />
+                        <input type="hidden" name="sitesearch" value="domena" />
+
+                        </form>
+                    </div>
+                    
+                    <li class="sb-close"><a href="oze.html">Odnawialne źródła energii</a></li>
+                    <li class="sb-close"><a href="piany.html">Piana poliuretanowa</a></li>
+                    <li class="sb-close"><a href="prace_inz.html">Prace inżynieryjne</a></li>
+                    <li class="sb-close"><a href="termowizja.html">Termowizja</a></li>
+                    <li class="sb-close"><a href="dotacje.html">Dotacje</a></li>
+                    <li class="sb-close"><a href="pompy.html">Pompy ciepła</a></li>
+                    <li class="sb-close"><a href="ogniwa.html">Panele słoneczne</a></li>
+                    <li class="sb-close"><a href="#"></a></li>
+                    <li class="sb-close"><a href="katalog.html"  style="color: crimson">Katalog</a></li>
+                    
+                    
+                </ul>
+            
+
+        </div>
+
+            <div class="sb-slidebar sb-right">
+              <!-- Your right Slidebar content. -->
+            </div>
+        
+            <!-- Slidebars -->
+            <script src="../js/slidebars.js"></script>
+            <script>
+                
+              (function($) {
+                $(document).ready(function() {
+                  $.slidebars();
+                });
+              }) (jQuery);
+            </script>
+    
+    <!-- main_menu //-->        
+        <script type="text/javascript">
+        $(function() {
+                $('#sti-menu').iconmenu();
+        });
+        </script>
+            
+<!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY -->
+<div id="sb-site"> <!-- sb-site TOP -->
+                
+
+        
+                    <a href="../index.html"><img class="logo_head" src="../images/logo.png" alt="Ekoinstal"></a>
+
+
+
+                    <div class="topMenu">
+                        <ul>
+                            <li><a href="../index.html"><img src="../images/home.png" alt="Strona dmowa"></a></li>
+                            <li><a href="../index.html#onas"><img src="../images/onas.png" alt="O nas"></a></li>
+                            <li><a href="../index.html#kontakty"><img src="../images/kontakt.png" alt="Kontakt"></a></li>
+                            <li><a href="../index.html#kontakt"> <img src="../images/sklep.png" alt="Sklep"></a></li>
+                            <li><a href="szukaj.html"><img src="../images/szukaj.png" alt="Szukaj"></a></li>
+
+                        </ul>
+                    </div>
+                    
+<!-- main_menu //-->                    
+        <div class="main">
+            <div class="container">
+                    <ul id="sti-menu" class="sti-menu">
+                            <li data-hovercolor="#3399cc">
+                                    <a href="../strony/pompy.html">
+                                            <h2 data-type="mText" class="sti-item">Pompy ciepła</h2>
+                                            <h3 data-type="sText" class="sti-item">dla każdego domu</h3>
+                                            <span data-type="icon" class="sti-icon sti-icon-pompy sti-item"></span>
+                                    </a>
+                            </li>
+                            <li data-hovercolor="#ffcc00">
+                                    <a href="../strony/ogniwa.html">
+                                            <h2 data-type="mText" class="sti-item">Panele słoneczne</h2>
+                                            <h3 data-type="sText" class="sti-item">... woda i prąd</h3>
+                                            <span data-type="icon" class="sti-icon sti-icon-panele sti-item"></span>
+                                    </a>
+                            </li>
+                            <li data-hovercolor="#ff3333">
+                                    <a href="dotacje.html">
+                                            <h2 data-type="mText" class="sti-item">Dotacje</h2>
+                                            <h3 data-type="sText" class="sti-item">UE i nie tylko</h3>
+                                            <span data-type="icon" class="sti-icon sti-icon-dotacje sti-item"></span>
+                                    </a>
+                            <!--</li>
+                            <li data-hovercolor="#d869b2">
+                                    <a href="#">
+                                            <h2 data-type="mText" class="sti-item">Prace inżynieryjne</h2>
+                                            <h3 data-type="sText" class="sti-item">For a healthier future</h3>
+                                            <span data-type="icon" class="sti-icon sti-icon-family sti-item"></span>
+                                    </a>
+                            </li>
+                            <li data-hovercolor="#ffdd3f">
+                                    <a href="#">
+                                            <h2 data-type="mText" class="sti-item">Termowizja</h2>
+                                            <h3 data-type="sText" class="sti-item">From the latest research</h3>
+                                            <span data-type="icon" class="sti-icon sti-icon-technology sti-item"></span>
+                                    </a>
+                            </li> //-->
+                    </ul>
+            </div>
+                    
+            
+        </div>
+        
+            <br><br>
+                    
+
+
+    <h1 class="header-main">Odnawialne Źródła Energii</h1>   
+    
+    <p class="text-main-description text-main-description-column">
+        Niezbędnym elementem życia codziennego jest energia. Chociaż występuje w
+        różnych formach, często nie wykorzystuje się jej w sposób bezpośredni, a zamienia 
+        na inne formy, np. energię cieplną. Pośród wielu czynności, które wykonujemy przy 
+        użyciu energii znaczny procent jej wykorzystania stanowi energia pożytkowana na 
+        ogrzewanie budynków oraz przygotowanie ciepłej wody użytkowej. Gdy stajemy się 
+        uczestnikami procesu inwestycyjnego, gdzie w trakcie jego realizacji napotykamy 
+        na źródło ciepła, warto wnikliwie zastanowić się nad jego wyborem bez względu na 
+        skalę przedsięwzięcia. Na rynku spotyka się wiele rodzajów źródeł ciepła różniących 
+        się sposobem przetwarzania energii pierwotnej na cieplną. Dostępne obecnie źródła 
+        ciepła, poczynając od konwencjonalnych zasilanych węglem kamiennym poprzez olej 
+        opałowy, gaz ziemny, biomasę, energię elektryczną po odnawialne źródła energii, 
+        dzielą proporcjonalnie udział w rynku. Do każdego z powyższych źródeł ciepła można 
+        dopisać cechy charakterystyczne, jakimi są koszty eksploatacyjne i inwestycyjne oraz 
+        aspekty ekologiczne. Wiążącym wpływem na wybór odpowiedniego źródła ciepła 
+        będzie dostępność źródła paliwa. Oczywistym jest, że brak takiego źródła eliminuje 
+        możliwość zastosowania takiego rozwiązania.
+    </p>
+    
+     
+  
+</div>  <!-- sb-site end //-->
+
+<p class="sb-toggle-left" id="fixed-top" style="color: crimson"> Menu</p>
+          
+    <a href="#" title="top" id="scroll-to-top"><img src="../images/up.png" alt="do góry" /></a>
+ 
+    <div class="social">
+        
+        <a href="https://www.facebook.com/pages/Budujemy-Dom/423667501001852?fref=ts">
+            <img src="../images/facebook_box.png" alt="facebook" style="width: 40px; position: absolute; margin-left:40px; margin-top: 20px; cursor: pointer">
+        </a>
+        
+        <a href="https://www.youtube.com/channel/UC2RvVXWlynSG6p-2hquuK0A">
+            <img src="../images/youtube.png" alt="youtube" style="width: 70px; position: absolute; margin-top: 80px; margin-left: 25px" >
+        </a>
+        
+        <p><span> M E D I A </span></p>
+        
+    </div> 
+    
+    <div class="mail">
+        <a href="mailto:biuro@grupaekoinstal.pl">
+            <p>Skontaktuj się</p>
+        </a>
+            <img src="../images/mail.png" alt="mail" style="width:25px; margin-left: 115px; margin-top: 10px" >
+    </div>   
+<!--
+<div id="sb-site-middle">  sb site middle //
+    
+        
+    <div class="description">
+        <h1 style="color: whitesmoke">Pompy ciepła</h1>
+        
+        <p class="description-text-left" style="color: whitesmoke; margin-top: 0"> 
+            tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.
+            tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.
+            tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.
+            tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.
+            tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.
+            tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.
+            tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.
+            tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.
+            tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.
+            tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.
+            tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.
+            tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.
+            tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.
+            tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.
+            tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.
+            tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.
+            tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.
+            tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.tekst o pompach ciepła.
+        </p>
+        
+        <img src="../images/g_test.jpg" alt="Pompy" class="description-graphic-right">
+        
+    </div>
+    
+    <hr class="underline">
+    
+    
+    <div class="description">
+        <h1 style="color: whitesmoke;">Elektrownie wiatrowe</h1>
+        
+        <p class="description-text-right" style="color: whitesmoke; margin-top: 0"> 
+            tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.
+            tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.
+            tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.
+            tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.
+            tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.
+            tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.
+            tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.
+            tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.
+            tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.
+            tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.
+            tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.
+            tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.
+            tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.
+            tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.
+            tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.
+            tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.tekst o elektrowniach wiatrowych.
+        </p>
+        
+        <img src="../images/g_test.jpg" alt="Wiatraki" class="description-graphic-left">
+        
+    </div>
+    
+    <hr class="underline">
+    
+    
+        <div class="description">
+        <h1 style="color: whitesmoke;">Panele słoneczne</h1>
+        
+        <p class="description-text-left" style="color: whitesmoke; margin-top: 0"> 
+            tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. 
+            tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. 
+            tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. 
+            tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. 
+            tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. 
+            tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. 
+            tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. 
+            tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. 
+            tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. 
+            tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. 
+            tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. 
+            tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. 
+            tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. 
+            tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. 
+            tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. 
+            tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. tekst o panelach słonecznych. 
+        </p>
+        
+        <img src="../images/g_test.jpg" alt="Panele" class="description-graphic-right">
+        
+    </div>
+    
+</div>  sb-site-middle end //
+
+        
+<div id="sb-site-bottom">  sb-site-bottom //  
+    
+    <p class="sb-toggle-left" id="fixed-top" style="color: crimson"> Menu</p>
+          
+    <a href="#" title="top" id="scroll-to-top"><img src="../images/up.png" alt="do góry" /></a>
+ 
+    <div class="social">
+        
+        <a href="https://www.facebook.com/pages/Budujemy-Dom/423667501001852?fref=ts">
+            <img src="../images/facebook_box.png" alt="facebook" style="width: 40px; position: absolute; margin-left:40px; margin-top: 20px; cursor: pointer">
+        </a>
+        
+        <a href="https://www.youtube.com/channel/UC2RvVXWlynSG6p-2hquuK0A">
+            <img src="../images/youtube.png" alt="youtube" style="width: 70px; position: absolute; margin-top: 80px; margin-left: 25px" >
+        </a>
+        
+        <p><span> M E D I A </span></p>
+        
+    </div> 
+    
+    <div class="mail">
+        <a href="mailto:biuro@grupaekoinstal.pl">
+            <img src="../images/mail.png" alt="mail" style="width:25px; margin-left: 115px; margin-top: 10px" >
+        </a>
+    </div>
+       
+                
+            <div class="container slider">
+
+            <div id="slider" class="sl-slider-wrapper">
+
+				<div class="sl-slider">
+				
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-1"></div>
+							<h2>Ekoinstal</h2>
+							<blockquote><p>Ekoinstal to trzy odrębne dziedziny funkcjonowania wspierane pracą dedykowanych specjalistów. Dział pompy ciepła specjalizuje się w systemach grzewczych z zastosowaniem technologii odnawialnych źródeł energii. Proponujemy najniższe koszty eksploatacyjne, maksymalny komfort, dbałość o ochronę środowiska i współodpowiedzialność za przyszłość Służymy pomocą również w zakresie sprzedaży i doboru pogrzewaczy wody użytkowej, suszarek do rąk. Współpracujemy z klientem indywidualnym i biznesowym.</p><cite>Grupa Ekoinstal</cite></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-2"></div>
+							<h2>Regula aurea.</h2>
+							<blockquote><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p><cite>Albert Schweitzer</cite></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-3"></div>
+							<h2>Dum spiro, spero.</h2>
+							<blockquote><p>Thousands of people who say they 'love' animals sit down once or twice a day to enjoy the flesh of creatures who have been utterly deprived of everything that could make their lives worth living and who endured the awful suffering and the terror of the abattoirs.</p><cite>Dame Jane Morris Goodall</cite></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-4"></div>
+							<h2>Donna nobis pacem.</h2>
+							<blockquote><p>The human body has no more need for cows' milk than it does for dogs' milk, horses' milk, or giraffes' milk.</p><cite>Michael Klaper M.D.</cite></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-5"></div>
+							<h2>For Artur!</h2>
+							<blockquote><p>JS i jQ coraz bardziej przypadają sobie do gustu :).</p><cite>Kamil Kaźmierowski</cite></blockquote>
+						</div>
+					</div>
+				</div> /sl-slider 
+
+				<nav id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</nav>
+
+			</div> /slider-wrapper 
+
+        </div>
+        
+        
+        
+             /container slider 
+                <script src="../js/menu_slice/modernizr.custom.79639.js" type="text/javascript"></script>
+                <script type="text/javascript" src="../js/menu_slice/jquery.ba-cond.min.js"></script>
+		<script type="text/javascript" src="../js/menu_slice/jquery.slitslider.js"></script>
+		<script>
+                        
+                        $(function() {
+			
+				var Page = (function() {
+
+					var $nav = $( '#nav-dots > span' ),
+						slitslider = $( '#slider' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							$nav.each( function( i ) {
+							
+								$( this ).on( 'click', function( event ) {
+									
+									var $dot = $( this );
+									
+									if( !slitslider.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+									
+									}
+									
+									slitslider.jump( i + 1 );
+									return false;
+								
+								} );
+								
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+				/**
+				 * Notes: 
+				 * 
+				 * example how to add items:
+				 */
+
+				/*
+				
+				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+				
+				// call the plugin's add method
+				ss.add($items);
+
+				*/
+                           });
+			
+		</script>
+                
+                
+                                
+</div>   sb-site-bottom end //-->
+
+<div class="footer">
+        
+        <div class="version">
+            v 0.6.5
+        </div>
+          
+          <a target="_blank" href="http://mfteam.com.pl" class="mf">&#169; Copyright by MFTeam</a>
+          
+</div>
+        
+    </body>
+</html>
